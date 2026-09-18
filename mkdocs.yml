@@ -1,28 +1,64 @@
-site_name: Mi Portafolio de Redes
-site_description: Laboratorios de VM, CML y Packet Tracer
+site_name: Portafolio Telecomunicaciones
+site_description: Laboratorios de Redes - VM, CML y Packet Tracer
 site_author: Tu Nombre
+site_url: https://GARNAUTH-DOSTO.github.io/PORTAFOLIO_TELECOM/
 
+# Tema Material con personalizaciones
 theme:
   name: material
+  custom_dir: docs/overrides
   palette:
-    primary: blue grey
-    accent: light blue
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
     - search.suggest
     - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: Fira Code
 
+# Navegación
 nav:
   - Inicio: index.md
   - Laboratorios:
-    - Lab 1 - DNS en Ubuntu: labs/lab1-dns.md
-    - Lab 2 - DHCP en Ubuntu: labs/lab2-dhcp.md
-    - Lab 3 - Packet Tracer VLANs: labs/lab3-vlans.md
+    - VLANs: labs/lab1-vlans.md
+    - DHCP: labs/lab2-dhcp.md
+  - Sobre mí: about.md
 
+# Extensiones
 markdown_extensions:
   - admonition
-  - pymdownx.details
-  - pymdownx.superfences
   - attr_list
   - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# Plugins
+plugins:
+  - search
