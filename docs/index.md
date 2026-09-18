@@ -1,19 +1,45 @@
-# Bienvenido a mi Portafolio de Redes
+<div class="hero">
+  # 🌐 Portafolio de Telecomunicaciones
+  
+  Laboratorios prácticos de redes con VM, CML y Packet Tracer
+</div>
 
-Soy estudiante de Ingeniería en Telecomunicaciones.
+## 📚 Laboratorios Destacados
 
-Aquí documento mis laboratorios prácticos con:
+<div class="lab-card">
+  ### 🔄 VLANs y Trunking
+  
+  Configuración de VLANs 10, 20 y 30 en switches Cisco Catalyst 2960
+  
+  <span class="badge badge-primary">Packet Tracer</span>
+  <span class="badge badge-secondary">Cisco IOS</span>
+  
+  [Ver laboratorio →](labs/lab1-vlans.md){ .md-button }
+</div>
 
-- **Máquinas Virtuales** (Ubuntu Server, servicios de red)
-- **Cisco Modeling Labs (CML)**
-- **Cisco Packet Tracer**
+<div class="lab-card">
+  ###  Servidor DHCP
+  
+  Implementación de servidor DHCP en Ubuntu Server 22.04
+  
+  <span class="badge badge-primary">Linux</span>
+  <span class="badge badge-secondary">Ubuntu</span>
+  
+  [Ver laboratorio →](labs/lab2-dhcp.md){ .md-button }
+</div>
 
-## Laboratorios destacados
+## 🛠️ Herramientas Utilizadas
 
-| # | Laboratorio | Herramienta |
-|---|------------|-------------|
-| 1 | Servidor DNS con BIND9 | VM Ubuntu |
-| 2 | Servidor DHCP | VM Ubuntu |
-| 3 | VLANs y Trunks | Packet Tracer |
+| Herramienta | Descripción | Nivel |
+|-------------|-------------|-------|
+| **Cisco Packet Tracer** | Simulador de redes | ⭐⭐⭐⭐ |
+| **Cisco Modeling Labs** | Emulador avanzado | ⭐⭐⭐ |
+| **VirtualBox/VMware** | Virtualización | ⭐⭐⭐⭐⭐ |
+| **Ubuntu Server** | Sistema operativo | ⭐⭐⭐⭐ |
 
-> Ve a la sección **Laboratorios** en el menú para ver cada práctica.
+## 📊 Estadísticas
+
+- ✅ **15+** Laboratorios completados
+- ️ **5** Topologías complejas
+- 🔧 **50+** Configuraciones documentadas
+- 📖 **100%** Documentación actualizada
