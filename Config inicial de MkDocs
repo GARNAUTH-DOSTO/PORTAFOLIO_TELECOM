@@ -1,0 +1,28 @@
+site_name: Mi Portafolio de Redes
+site_description: Laboratorios de VM, CML y Packet Tracer
+site_author: Tu Nombre
+
+theme:
+  name: material
+  palette:
+    primary: blue grey
+    accent: light blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Inicio: index.md
+  - Laboratorios:
+    - Lab 1 - DNS en Ubuntu: labs/lab1-dns.md
+    - Lab 2 - DHCP en Ubuntu: labs/lab2-dhcp.md
+    - Lab 3 - Packet Tracer VLANs: labs/lab3-vlans.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
