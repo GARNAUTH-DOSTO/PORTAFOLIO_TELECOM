@@ -16,7 +16,7 @@ extra_css:
   - stylesheets/custom.css
 nav:
   - Inicio: index.md
-  - Laboratorios:
+  - Laboratorios brrrrr:
     - Lab 1 - DNS en Ubuntu: labs/lab1-dns.md
     - Lab 2 - DHCP en Ubuntu: labs/lab2-dhcp.md
     - Lab 3 - Packet Tracer VLANs: labs/lab3-vlans.md
