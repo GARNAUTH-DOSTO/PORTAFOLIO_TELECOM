@@ -12,7 +12,8 @@ theme:
     - navigation.sections
     - search.suggest
     - search.highlight
-
+extra_css:
+  - stylesheets/custom.css
 nav:
   - Inicio: index.md
   - Laboratorios:
