@@ -61,51 +61,47 @@ Mi objetivo es aplicar los conocimientos teóricos en escenarios prácticos, doc
 
 Aquí presento mis prácticas más relevantes. Cada laboratorio incluye topología, configuración paso a paso, capturas de pantalla y resultados.
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 2rem 0;">
+<div class="grid cards" markdown>
 
-<div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #667eea;">
+- **🔄 Lab 1: VLANs y Trunking**
 
-### 🔄 Lab 1: VLANs y Trunking
-Configuración de VLANs 10, 20 y 30 en switches Cisco Catalyst 2960 con trunking 802.1Q.
+    ---
 
-**Herramienta:** Packet Tracer
+    Configuración de VLANs 10, 20 y 30 en switches Cisco Catalyst 2960 con trunking 802.1Q.
 
-[Ver laboratorio →](labs/lab1-vlans.md)
+    **Herramienta:** Packet Tracer
 
-</div>
+    [Ver laboratorio :material-arrow-right:](labs/lab1-vlans.md){ .md-button }
 
-<div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #11998e;">
+- **📡 Lab 2: Servidor DHCP**
 
-### 📡 Lab 2: Servidor DHCP
-Implementación de un servidor DHCP en Ubuntu Server 22.04 para asignación automática de IPs.
+    ---
 
-**Herramienta:** VM Ubuntu Server
+    Implementación de un servidor DHCP en Ubuntu Server 22.04 para asignación automática de IPs.
 
-[Ver laboratorio →](labs/lab2-dhcp.md)
+    **Herramienta:** VM Ubuntu Server
 
-</div>
+    [Ver laboratorio :material-arrow-right:](labs/lab2-dhcp.md){ .md-button }
 
-<div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #f5576c;">
+- **🌐 Lab 3: Servidor DNS**
 
-### 🌐 Lab 3: Servidor DNS
-Configuración de un servidor DNS autoritativo con BIND9 para resolución de nombres local.
+    ---
 
-**Herramienta:** VM Ubuntu Server
+    Configuración de un servidor DNS autoritativo con BIND9 para resolución de nombres local.
 
-[Ver laboratorio →](labs/lab3-dns.md)
+    **Herramienta:** VM Ubuntu Server
 
-</div>
+    [Ver laboratorio :material-arrow-right:](labs/lab3-dns.md){ .md-button }
 
-<div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #f093fb;">
+- **🖨️ Lab 4: Servidor CUPS**
 
-### ️ Lab 4: Servidor CUPS
-Configuración de un servidor de impresión en Ubuntu Server para compartir impresoras en red.
+    ---
 
-**Herramienta:** VM Ubuntu Server
+    Configuración de un servidor de impresión en Ubuntu Server para compartir impresoras en red.
 
-[Ver laboratorio →](labs/lab4-cups.md)
+    **Herramienta:** VM Ubuntu Server
 
-</div>
+    [Ver laboratorio :material-arrow-right:](labs/lab4-cups.md){ .md-button }
 
 </div>
 
