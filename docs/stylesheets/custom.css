@@ -1,21 +1,69 @@
-/* Ajustar espacio del header */
-.md-header {
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
+/* ===== Paleta oscura ===== */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0b0f14;
+  --md-default-bg-color--light: #11161d;
+  --md-default-fg-color: #e6edf3;
+  --md-primary-fg-color: #05080c;
+  --md-accent-fg-color: #00e5ff;
+  --md-typeset-a-color: #4dd2ff;
+
+  /* ===== Colores vivos para comandos ===== */
+  --md-code-bg-color: #05080c;
+  --md-code-fg-color: #39ff88;
+  --md-code-hl-keyword-color: #ff5ecb;
+  --md-code-hl-operator-color: #ff5ecb;
+  --md-code-hl-special-color: #ff5ecb;
+  --md-code-hl-string-color: #ffd84d;
+  --md-code-hl-number-color: #ff9f43;
+  --md-code-hl-function-color: #4dd2ff;
+  --md-code-hl-variable-color: #4dd2ff;
+  --md-code-hl-constant-color: #b28dff;
+  --md-code-hl-name-color: #39ff88;
+  --md-code-hl-comment-color: #7d8590;
+  --md-code-hl-generic-color: #7d8590;
+  --md-code-hl-punctuation-color: #9fb3c8;
 }
 
-/* Ajustar la barra de búsqueda */
-.md-search {
-  margin-top: 4px !important;
-  margin-bottom: 4px !important;
+/* ===== Ventana de terminal con bordes ===== */
+.md-typeset .highlight {
+  border: 1px solid #2a3441;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--md-code-bg-color);
+  box-shadow: 0 0 0 1px rgba(57, 255, 136, 0.08), 0 6px 18px rgba(0, 0, 0, 0.5);
 }
 
-/* Ajustar el input de búsqueda */
-.md-search__inner {
-  margin-top: 4px !important;
+/* Barra de título (el title="SW1" del bloque) con los 3 puntos de ventana */
+.md-typeset .highlight span.filename {
+  position: relative;
+  margin-top: 0;
+  padding: 0.55em 1em 0.55em 4.6em;
+  background: #0f1620;
+  border-bottom: 1px solid #2a3441;
+  color: #9fb3c8;
+  font-size: 0.75rem;
 }
 
-/* Espacio entre el header y las tabs de navegación */
-.md-tabs {
-  margin-top: 0 !important;
+.md-typeset .highlight span.filename::before {
+  content: "";
+  position: absolute;
+  left: 1.1em;
+  top: 50%;
+  width: 0.65em;
+  height: 0.65em;
+  margin-top: -0.325em;
+  border-radius: 50%;
+  background: #ff5f56;
+  box-shadow: 1.1em 0 0 #ffbd2e, 2.2em 0 0 #27c93f;
+}
+
+/* ===== Bordes en imágenes y admonitions ===== */
+.md-typeset img {
+  border: 1px solid #2a3441;
+  border-radius: 8px;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
 }
