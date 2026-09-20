@@ -140,6 +140,9 @@ Gi0/2            Altn BLK 4         128.26   P2p
 
 !!! note "Otros comandos útiles"
     `show spanning-tree summary`, `show spanning-tree root`, `show interfaces trunk`
+    
+[Descargar .pkt](../assets/files/lab-stp/lab-stp.pkt){ .md-button .md-button--primary download }
+[Descargar configs](../assets/files/lab-stp/configs.txt){ .md-button download }
 
 ## Conclusión
 
