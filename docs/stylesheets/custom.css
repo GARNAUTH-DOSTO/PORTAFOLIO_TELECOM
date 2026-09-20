@@ -1,0 +1,21 @@
+/* Ajustar espacio del header */
+.md-header {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+/* Ajustar la barra de búsqueda */
+.md-search {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+/* Ajustar el input de búsqueda */
+.md-search__inner {
+  margin-top: 4px !important;
+}
+
+/* Espacio entre el header y las tabs de navegación */
+.md-tabs {
+  margin-top: 0 !important;
+}
