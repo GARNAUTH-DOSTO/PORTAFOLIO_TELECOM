@@ -1,7 +1,7 @@
 /* ===== Paleta oscura ===== */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #2d3032;
-  --md-default-bg-color--light: #26230f;   /* fondo de las tarjetas, un poco más claro */
+  --md-default-bg-color: #040002;
+  --md-default-bg-color--light: #120f11;   /* fondo de las tarjetas, un poco más claro */
   --md-default-fg-color: #f2ede0;          /* hueso */
   --md-default-fg-color--light: #d9d2bf;   /* antes gris: menú lateral, "Table of contents" */
   --md-default-fg-color--lighter: #a79f8b;
