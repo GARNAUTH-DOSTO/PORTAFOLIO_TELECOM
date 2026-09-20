@@ -1,7 +1,7 @@
 /* ===== Paleta oscura ===== */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #0b0f14;
-  --md-default-bg-color--light: #11161d;
+  --md-default-bg-color: #1c1a0b;
+  --md-default-bg-color--light: #26230f;   /* fondo de las tarjetas, un poco más claro */
   --md-default-fg-color: #f2ede0;          /* hueso */
   --md-default-fg-color--light: #d9d2bf;   /* antes gris: menú lateral, "Table of contents" */
   --md-default-fg-color--lighter: #a79f8b;
@@ -105,7 +105,7 @@
 .md-typeset .grid.cards > ul > li:nth-child(4n+4) { border-left-color: #e056fd; }
 
 .md-typeset h1 {
-  color: #4dd2ff;
+  color: #e65335;
   font-weight: 600;
 }
 
@@ -127,4 +127,11 @@
   font-size: 1.05rem;
   font-weight: 700;
   color: #39ff88;
+}
+
+
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: #e8a623;
 }
