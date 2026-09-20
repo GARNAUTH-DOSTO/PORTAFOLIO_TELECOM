@@ -2,9 +2,9 @@
 
 <div class="hero" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin-bottom: 2rem;">
 
-## 👋 ¡Hola! Soy [Tu Nombre]
+## 👋 ¡Hola! Soy Gustavo Torres Garnauth
 
-### Estudiante de Ingeniería en Telecomunicaciones
+###Ingeniero en Sistemas yTelecomunicaciones
 
 Apasionado por las redes, la virtualización y la infraestructura TI.
 Aquí documento mis laboratorios prácticos y proyectos académicos.
