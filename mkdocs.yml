@@ -5,24 +5,42 @@ site_author: Gustavo Torres Garnauth
 theme:
   name: material
   palette:
-    primary: blue grey
-    accent: light blue
+    scheme: slate
+    primary: black
+    accent: cyan
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.top
     - search.suggest
     - search.highlight
+    - content.code.copy
+    - content.tabs.link
+
 extra_css:
   - stylesheets/custom.css
+
 nav:
-  - Laboratorios:
+  - Inicio: index.md
+  - Redes:
+    - Lab 3 - Packet Tracer VLANs: labs/lab3-vlans.md
+    - Lab 4 - STP en 3 switches: labs/lab-stp-3-switches.md
+  - Linux:
     - Lab 1 - DNS en Ubuntu: labs/lab1-dns.md
     - Lab 2 - DHCP en Ubuntu: labs/lab2-dhcp.md
-    - Lab 3 - Packet Tracer VLANs: labs/lab3-vlans.md
+  - Docker:
+    - Introducción: docker/index.md
 
 markdown_extensions:
   - admonition
-  - pymdownx.details
-  - pymdownx.superfences
   - attr_list
   - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
