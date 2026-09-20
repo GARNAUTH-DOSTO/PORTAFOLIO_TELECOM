@@ -1,45 +1,151 @@
-<div class="hero">
-  # 🌐 Portafolio de Telecomunicaciones
-  
-  Laboratorios prácticos de redes con VM, CML y Packet Tracer
+# 🌐 Portafolio de Telecomunicaciones
+
+<div class="hero" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin-bottom: 2rem;">
+
+## 👋 ¡Hola! Soy [Tu Nombre]
+
+### Estudiante de Ingeniería en Telecomunicaciones
+
+Apasionado por las redes, la virtualización y la infraestructura TI.
+Aquí documento mis laboratorios prácticos y proyectos académicos.
+
 </div>
 
-## 📚 Laboratorios Destacados
+---
 
-<div class="lab-card">
-  ### 🔄 VLANs y Trunking
-  
-  Configuración de VLANs 10, 20 y 30 en switches Cisco Catalyst 2960
-  
-  <span class="badge badge-primary">Packet Tracer</span>
-  <span class="badge badge-secondary">Cisco IOS</span>
-  
-  [Ver laboratorio →](labs/lab1-vlans.md){ .md-button }
+## 👤 Sobre mí
+
+Soy estudiante de **Ingeniería en Telecomunicaciones**, enfocado en el diseño, configuración y administración de redes de datos. Me especializo en:
+
+-  **Redes LAN/WAN** con equipos Cisco
+- 🖥️ **Virtualización** con máquinas virtuales (Ubuntu Server, Windows Server)
+- 🔧 **Servicios de red**: DNS, DHCP, CUPS, Samba, Apache
+- 🌐 **Simulación y emulación** con Packet Tracer y Cisco Modeling Labs (CML)
+
+Mi objetivo es aplicar los conocimientos teóricos en escenarios prácticos, documentando cada paso para construir una base sólida de experiencia.
+
+---
+
+## 🛠️ Habilidades Técnicas
+
+=== "🖧 Redes"
+    - Configuración de routers y switches Cisco
+    - VLANs, Trunking, STP, EtherChannel
+    - Enrutamiento estático y dinámico (OSPF, EIGRP)
+    - DHCP, DNS, NAT, ACLs
+    - Modelado de topologías en Packet Tracer y CML
+
+=== "🖥️ Sistemas Operativos"
+    - **Ubuntu Server**: instalación, configuración y administración
+    - **Windows Server**: Active Directory, GPO, DNS, DHCP
+    - Comandos de terminal Linux (Bash)
+    - Gestión de usuarios y permisos
+
+=== "🔧 Servicios de Red"
+    - **BIND9**: Servidor DNS
+    - **ISC DHCP**: Servidor DHCP
+    - **CUPS**: Servidor de impresión
+    - **Samba**: Compartir archivos entre Linux y Windows
+    - **Apache/Nginx**: Servidores web
+
+=== " Herramientas"
+    - Cisco Packet Tracer 8.x
+    - Cisco Modeling Labs (CML)
+    - VirtualBox / VMware
+    - Wireshark (análisis de tráfico)
+    - GNS3
+
+---
+
+## 🧪 Laboratorios Destacados
+
+Aquí presento mis prácticas más relevantes. Cada laboratorio incluye topología, configuración paso a paso, capturas de pantalla y resultados.
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 2rem 0;">
+
+<div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #667eea;">
+
+### 🔄 Lab 1: VLANs y Trunking
+Configuración de VLANs 10, 20 y 30 en switches Cisco Catalyst 2960 con trunking 802.1Q.
+
+**Herramienta:** Packet Tracer
+
+[Ver laboratorio →](labs/lab1-vlans.md)
+
 </div>
 
-<div class="lab-card">
-  ###  Servidor DHCP
-  
-  Implementación de servidor DHCP en Ubuntu Server 22.04
-  
-  <span class="badge badge-primary">Linux</span>
-  <span class="badge badge-secondary">Ubuntu</span>
-  
-  [Ver laboratorio →](labs/lab2-dhcp.md){ .md-button }
+<div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #11998e;">
+
+### 📡 Lab 2: Servidor DHCP
+Implementación de un servidor DHCP en Ubuntu Server 22.04 para asignación automática de IPs.
+
+**Herramienta:** VM Ubuntu Server
+
+[Ver laboratorio →](labs/lab2-dhcp.md)
+
 </div>
 
-## 🛠️ Herramientas Utilizadas
+<div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #f5576c;">
 
-| Herramienta | Descripción | Nivel |
-|-------------|-------------|-------|
-| **Cisco Packet Tracer** | Simulador de redes | ⭐⭐⭐⭐ |
-| **Cisco Modeling Labs** | Emulador avanzado | ⭐⭐⭐ |
-| **VirtualBox/VMware** | Virtualización | ⭐⭐⭐⭐⭐ |
-| **Ubuntu Server** | Sistema operativo | ⭐⭐⭐⭐ |
+### 🌐 Lab 3: Servidor DNS
+Configuración de un servidor DNS autoritativo con BIND9 para resolución de nombres local.
 
-## 📊 Estadísticas
+**Herramienta:** VM Ubuntu Server
 
-- ✅ **15+** Laboratorios completados
-- ️ **5** Topologías complejas
-- 🔧 **50+** Configuraciones documentadas
-- 📖 **100%** Documentación actualizada
+[Ver laboratorio →](labs/lab3-dns.md)
+
+</div>
+
+<div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #f093fb;">
+
+### ️ Lab 4: Servidor CUPS
+Configuración de un servidor de impresión en Ubuntu Server para compartir impresoras en red.
+
+**Herramienta:** VM Ubuntu Server
+
+[Ver laboratorio →](labs/lab4-cups.md)
+
+</div>
+
+</div>
+
+!!! tip "¿Quieres ver todos los laboratorios?"
+    Ve a la sección **Laboratorios** en el menú superior para explorar todas mis prácticas documentadas.
+
+---
+
+## 📊 Estadísticas del Portafolio
+
+| Métrica | Valor |
+|---------|-------|
+| 🧪 Laboratorios documentados | 4+ |
+| ️ Herramientas utilizadas | 8+ |
+| 🖧 Topologías diseñadas | 5+ |
+| 📝 Horas de práctica | 100+ |
+
+---
+
+## 🎓 Formación y Certificaciones
+
+- 🎓 **Ingeniería en Telecomunicaciones** - [Nombre de tu universidad] (En curso)
+- 📜 **Cisco Networking Academy** - Introducción a Redes (En curso)
+- 📜 [Agrega aquí otras certificaciones si tienes]
+
+!!! note "Actualización constante"
+    Este portafolio se actualiza regularmente con nuevos laboratorios y proyectos. ¡Vuelve pronto!
+
+---
+
+## 📬 Contacto
+
+¿Tienes alguna pregunta, sugerencia o propuesta de colaboración?
+
+| Medio | Enlace |
+|-------|--------|
+| 📧 Email | tu-correo@ejemplo.com |
+|  LinkedIn | [linkedin.com/in/tu-perfil](https://linkedin.com) |
+|  GitHub | [github.com/GARNAUTH-DOSTO](https://github.com/GARNAUTH-DOSTO) |
+
+---
+
+> *"La práctica constante es el camino hacia la maestría en redes."*
