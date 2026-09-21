@@ -3,6 +3,7 @@ site_description: Laboratorios de VM, CML y Packet Tracer
 site_author: Gustavo Torres Garnauth
 
 theme:
+  language: es
   name: material
   palette:
     scheme: slate
