@@ -1,53 +1,193 @@
-/* ===== Paleta oscura ===== */
-[data-md-color-scheme="slate"] {
-  --md-default-bg-color: #121416;
-  --md-default-bg-color--light:#11161d;   /* fondo de las tarjetas, un poco más claro */
-  --md-default-fg-color: #f2ede0;          /* hueso */
-  --md-default-fg-color--light: #d9d2bf;   /* antes gris: menú lateral, "Table of contents" */
-  --md-default-fg-color--lighter: #a79f8b;
-  --md-default-fg-color--lightest: rgba(242, 237, 224, 0.12);  /* líneas divisorias */
-  --md-typeset-color: #f2ede0;             /* texto del cuerpo */
-  --md-primary-fg-color: #05080c;
-  --md-accent-fg-color: #00e5ff;
-  --md-typeset-a-color: #4dd2ff;
+/* =========================================================
+   Portafolio de Redes — estilo dashboard de red / terminal
+   ========================================================= */
 
-  /* ===== Colores vivos para comandos ===== */
-  --md-code-bg-color: #05080c;
-  --md-code-fg-color: #39ff88;
-  --md-code-hl-keyword-color: #ff5ecb;
-  --md-code-hl-operator-color: #ff5ecb;
-  --md-code-hl-special-color: #ff5ecb;
-  --md-code-hl-string-color: #ffd84d;
-  --md-code-hl-number-color: #ff9f43;
-  --md-code-hl-function-color: #4dd2ff;
-  --md-code-hl-variable-color: #4dd2ff;
-  --md-code-hl-constant-color: #b28dff;
-  --md-code-hl-name-color: #39ff88;
-  --md-code-hl-comment-color: #7d8590;
-  --md-code-hl-generic-color: #7d8590;
-  --md-code-hl-punctuation-color: #9fb3c8;
+[data-md-color-scheme="slate"] {
+  /* Fondos */
+  --md-default-bg-color: #0D1117;
+  --md-default-bg-color--light: #161B22;
+  --md-primary-fg-color: #1F2933;
+  --md-primary-fg-color--light: #1F2933;
+  --md-primary-fg-color--dark: #1F2933;
+  --md-footer-bg-color: #0B0F14;
+  --md-footer-bg-color--dark: #0B0F14;
+
+  /* Texto */
+  --md-default-fg-color: #E5E7EB;
+  --md-default-fg-color--light: #9CA3AF;
+  --md-default-fg-color--lighter: #6B7280;
+  --md-default-fg-color--lightest: #1F2933;
+  --md-typeset-color: #E5E7EB;
+  --md-primary-bg-color: #9CA3AF;
+  --md-primary-bg-color--light: #6B7280;
+  --md-footer-fg-color: #9CA3AF;
+  --md-footer-fg-color--light: #6B7280;
+  --md-footer-fg-color--lighter: #6B7280;
+
+  /* Links */
+  --md-typeset-a-color: #00C2FF;
+  --md-accent-fg-color: #22D3EE;
+  --md-typeset-table-color: #374151;
+
+  /* Código (terminal) */
+  --md-code-bg-color: #0B0F14;
+  --md-code-fg-color: #22C55E;
+  --md-code-hl-keyword-color: #00C2FF;
+  --md-code-hl-operator-color: #00C2FF;
+  --md-code-hl-special-color: #00C2FF;
+  --md-code-hl-string-color: #22C55E;
+  --md-code-hl-number-color: #F59E0B;
+  --md-code-hl-function-color: #22D3EE;
+  --md-code-hl-variable-color: #22D3EE;
+  --md-code-hl-constant-color: #3B82F6;
+  --md-code-hl-name-color: #E5E7EB;
+  --md-code-hl-comment-color: #6B7280;
+  --md-code-hl-generic-color: #6B7280;
+  --md-code-hl-punctuation-color: #9CA3AF;
 }
 
-/* ===== Ventana de terminal con bordes ===== */
-.md-typeset .highlight {
-  border: 1px solid #2a3441;
+/* ===== Ancho del contenido ===== */
+.md-grid { max-width: 90rem; }
+
+/* ===== Header / Navbar ===== */
+.md-header,
+.md-header--shadow { box-shadow: none; }
+
+.md-header__inner { padding: 0.7rem 1rem; }
+
+.md-header__topic:first-child {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #00C2FF;
+}
+
+.md-tabs {
+  background-color: #1F2933;
+  border-bottom: 1px solid #374151;
+}
+.md-tabs__link { color: #9CA3AF; opacity: 1; }
+.md-tabs__link:hover { color: #00C2FF; }
+.md-tabs__item--active .md-tabs__link { color: #3B82F6; }
+
+/* ===== Sidebars ===== */
+.md-sidebar { top: 3.8rem; }
+
+.md-sidebar .md-nav__title { color: #9CA3AF; }
+.md-sidebar .md-nav__link { color: #9CA3AF; }
+.md-sidebar .md-nav__link:hover,
+.md-sidebar .md-nav__link:focus { color: #00C2FF; }
+
+/* Menú izquierdo: página activa */
+.md-sidebar--primary .md-nav__link--active { color: #3B82F6; }
+
+/* Tabla de contenido (derecha) */
+.md-sidebar--secondary .md-nav__link {
+  border-left: 2px solid transparent;
+  padding-left: 0.6rem;
+}
+.md-sidebar--secondary .md-nav__link--active {
+  color: #FFFFFF;
+  border-left-color: #00C2FF;
+}
+
+/* ===== Títulos e iconos ===== */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 { color: #E5E7EB; }
+
+.md-typeset h1 { font-weight: 600; }
+
+.md-typeset h1 .twemoji,
+.md-typeset h2 .twemoji,
+.md-typeset h3 .twemoji,
+.md-typeset h4 .twemoji { color: #00C2FF; }
+
+.md-typeset blockquote {
+  color: #9CA3AF;
+  border-left-color: #00C2FF;
+}
+
+/* ===== Links ===== */
+.md-typeset a:not(.md-button):active { color: #3B82F6; }
+
+/* ===== Botones ===== */
+.md-typeset .md-button {
+  color: #00C2FF;
+  border-color: #00C2FF;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus {
+  color: #0D1117;
+  background-color: #22D3EE;
+  border-color: #22D3EE;
+}
+.md-typeset .md-button--primary {
+  color: #0D1117;
+  background-color: #00C2FF;
+  border-color: #00C2FF;
+}
+
+/* ===== Tarjetas ===== */
+.md-typeset .grid.cards > ul > li {
+  background: #161B22;
+  border: 1px solid #1F2933;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: #1F2933;
+  box-shadow: 0 0 10px rgba(0, 194, 255, 0.2);
+}
+
+/* ===== Hero ===== */
+.md-typeset .hero {
+  padding: 2rem 2.2rem;
+  margin: 1.5rem 0 2rem;
+  background: #161B22;
+  border: 1px solid #1F2933;
   border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.md-typeset .hero:hover { box-shadow: 0 0 10px rgba(0, 194, 255, 0.2); }
+.md-typeset .hero p { margin: 0 0 0.6rem; color: #9CA3AF; }
+.md-typeset .hero__hi { font-size: 1rem; color: #6B7280; }
+.md-typeset .hero__name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #F59E0B;
+  background: linear-gradient(90deg, #F59E0B, #FB923C);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.md-typeset .hero__role {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  color: #00C2FF;
+}
+
+/* ===== Cajas de comandos (ventana de terminal) ===== */
+.md-typeset .highlight {
+  border: 1px solid #374151;
+  border-radius: 8px;
   overflow: hidden;
   background: var(--md-code-bg-color);
-  box-shadow: 0 0 0 1px rgba(57, 255, 136, 0.08), 0 6px 18px rgba(0, 0, 0, 0.5);
 }
 
-/* Barra de título (el title="SW1" del bloque) con los 3 puntos de ventana */
 .md-typeset .highlight span.filename {
   position: relative;
   margin-top: 0;
   padding: 0.55em 1em 0.55em 4.6em;
-  background: #0f1620;
-  border-bottom: 1px solid #2a3441;
-  color: #9fb3c8;
+  background: #1F2933;
+  border-bottom: 1px solid #374151;
+  color: #9CA3AF;
   font-size: 0.75rem;
 }
-
 .md-typeset .highlight span.filename::before {
   content: "";
   position: absolute;
@@ -57,115 +197,78 @@
   height: 0.65em;
   margin-top: -0.325em;
   border-radius: 50%;
-  background: #ff5f56;
-  box-shadow: 1.1em 0 0 #ffbd2e, 2.2em 0 0 #27c93f;
+  background: #6B7280;
+  box-shadow: 1.1em 0 0 #6B7280, 2.2em 0 0 #6B7280;
 }
 
-/* ===== Bordes en imágenes y admonitions ===== */
+.md-typeset :not(pre) > code { background-color: #1F2933; }
+
+/* ===== Imágenes, tablas ===== */
 .md-typeset img {
-  border: 1px solid #2a3441;
+  border: 1px solid #374151;
   border-radius: 8px;
 }
 
+.md-typeset table:not([class]) {
+  background: #161B22;
+  border: 1px solid #374151;
+}
+.md-typeset table:not([class]) th {
+  background: #1F2933;
+  color: #E5E7EB;
+}
+
+/* ===== Admonitions (estados: info, éxito, advertencia) ===== */
 .md-typeset .admonition,
 .md-typeset details {
+  background: #1F2933;
+  border-color: #374151;
   border-radius: 8px;
 }
 
-/* ===== Tarjetas de laboratorios (grid cards) ===== */
-.md-typeset .grid.cards > ul > li {
-  border: 1px solid #2a3441;
-  border-left: 4px solid var(--card-color, #667eea);
-  border-radius: 10px;
-  background: var(--md-default-bg-color--light);
+.md-typeset .admonition.note,
+.md-typeset details.note,
+.md-typeset .admonition.info,
+.md-typeset details.info { border-color: #00C2FF; }
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary,
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary { background-color: rgba(0, 194, 255, 0.1); }
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before,
+.md-typeset .info > .admonition-title::before,
+.md-typeset .info > summary::before { background-color: #00C2FF; }
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip,
+.md-typeset .admonition.success,
+.md-typeset details.success { border-color: #22C55E; }
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary,
+.md-typeset .success > .admonition-title,
+.md-typeset .success > summary { background-color: rgba(34, 197, 94, 0.1); }
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before,
+.md-typeset .success > .admonition-title::before,
+.md-typeset .success > summary::before { background-color: #22C55E; }
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning { border-color: #F59E0B; }
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary { background-color: rgba(245, 158, 11, 0.1); }
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before { background-color: #F59E0B; }
+
+/* ===== Badges (uso: <span class="badge badge--success">Completado</span>) ===== */
+.badge {
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  background: #1F2933;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  color: #9CA3AF;
+  font-size: 0.75rem;
 }
-
-.md-typeset .grid.cards > ul > li:hover {
-  border-color: #2a3441;
-  border-left-color: var(--card-color, #667eea);
-  box-shadow: 0 0 14px rgba(0, 229, 255, 0.15);
-}
-
-.md-typeset .grid.cards > ul > li:nth-child(1) { --card-color: #667eea; }
-.md-typeset .grid.cards > ul > li:nth-child(2) { --card-color: #11998e; }
-.md-typeset .grid.cards > ul > li:nth-child(3) { --card-color: #f5576c; }
-.md-typeset .grid.cards > ul > li:nth-child(4) { --card-color: #f093fb; }
-
-/* ===== Tarjetas de laboratorios (grid cards) ===== */
-.md-typeset .grid.cards > ul > li {
-  border: 1px solid #2a3441;
-  border-left-width: 4px;
-  border-radius: 10px;
-  background: var(--md-default-bg-color--light);
-}
-
-.md-typeset .grid.cards > ul > li:nth-child(4n+1) { border-left-color: #667eea; }
-.md-typeset .grid.cards > ul > li:nth-child(4n+2) { border-left-color: #11998e; }
-.md-typeset .grid.cards > ul > li:nth-child(4n+3) { border-left-color: #f5576c; }
-.md-typeset .grid.cards > ul > li:nth-child(4n+4) { border-left-color: #e056fd; }
-
-
-
-
-
-
-.md-typeset h1 {
-  color: #4dd2ff;
-  font-weight: 600;
-}
-
-.md-typeset blockquote {
-  color: var(--md-default-fg-color);
-  border-left-color: #4dd2ff;
-}
-
-.md-header__inner {
-  padding: 0.7rem 1rem;
-}
-
-.md-sidebar {
-  top: 3.8rem;  /* compensa el header más alto para que el menú no quede tapado al hacer scroll */
-}
-
-.md-header__topic:first-child {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #e65335;
-}
-
-
-.md-typeset h1 {
-  color: #e65335;
-  font-weight: 600;
-}
-
-.md-typeset h2,
-.md-typeset h3,
-.md-typeset h4 {
-  color: #e8a623;
-}
-
-.md-sidebar .md-nav__title {
-  color: #e65335;
-}
-
-
-/* ===== Hero ===== */
-.md-typeset .hero {
-  padding: 2rem 2.2rem;
-  margin: 1.5rem 0 2rem;
-  border: 1px solid rgba(232, 166, 35, 0.35);
-  border-left: 4px solid #e8a623;
-  border-radius: 14px;
-  background: linear-gradient(135deg, rgba(232, 166, 35, 0.12), rgba(230, 83, 53, 0.06));
-  box-shadow: 0 0 24px rgba(232, 166, 35, 0.1);
-}
-
-.md-typeset .hero p { margin: 0 0 0.6rem; }
-.md-typeset .hero__hi { font-size: 1rem; color: var(--md-default-fg-color--light); }
-.md-typeset .hero__name { font-size: 2rem; font-weight: 700; line-height: 1.15; color: #e8a623; }
-.md-typeset .hero__role { font-family: "JetBrains Mono", monospace; font-weight: 700; color: #39ff88; }
-
-
-.md-grid { max-width: 90rem; }
+.badge--success { color: #22C55E; border-color: #22C55E; }
+.badge--warning { color: #F59E0B; border-color: #F59E0B; }
+.badge--info { color: #00C2FF; border-color: #00C2FF; }
