@@ -1,3 +1,7 @@
+---
+hide:
+  - navigation
+---
 # 🌐 Portafolio de Telecomunicaciones
 ---
 hide:
