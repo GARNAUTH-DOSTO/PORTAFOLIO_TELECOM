@@ -32,8 +32,8 @@ nav:
     - Lab 2 - DHCP en Ubuntu: labs/lab2-dhcp.md
   - Docker:
     - Introducción: docker/index.md
-    - Automatizacion:
-      -Lab 1:
+  - Automatizacion:
+    - Lab 1:
 
 markdown_extensions:
   - admonition
