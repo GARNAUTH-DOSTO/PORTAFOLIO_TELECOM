@@ -272,3 +272,15 @@
 .badge--success { color: #22C55E; border-color: #22C55E; }
 .badge--warning { color: #F59E0B; border-color: #F59E0B; }
 .badge--info { color: #00C2FF; border-color: #00C2FF; }
+
+/* ===== Tabs: ocupan la mitad de la pantalla, reparto automático ===== */
+.md-tabs__list {
+  width: 50vw;
+  max-width: 100%;
+}
+
+.md-tabs__item {
+  flex: 1 1 0;      /* cada ítem toma la misma fracción del ancho */
+  padding: 0;
+  text-align: center;
+}
