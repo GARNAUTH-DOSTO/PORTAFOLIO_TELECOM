@@ -95,6 +95,12 @@
 
 
 
+
+.md-typeset .grid.cards > ul > li:nth-child(4n+1) { border-left-color: #667eea; }
+.md-typeset .grid.cards > ul > li:nth-child(4n+2) { border-left-color: #11998e; }
+.md-typeset .grid.cards > ul > li:nth-child(4n+3) { border-left-color: #f5576c; }
+.md-typeset .grid.cards > ul > li:nth-child(4n+4) { border-left-color: #e056fd; }
+
 .md-typeset h1 {
   color: #4dd2ff;
   font-weight: 600;
@@ -110,8 +116,17 @@
   border-radius: 10px;
   background: var(--md-default-bg-color--light);
 }
+.md-header__inner {
+  padding: 0.7rem 1rem;
+}
 
-.md-typeset .grid.cards > ul > li:nth-child(4n+1) { border-left-color: #667eea; }
-.md-typeset .grid.cards > ul > li:nth-child(4n+2) { border-left-color: #11998e; }
-.md-typeset .grid.cards > ul > li:nth-child(4n+3) { border-left-color: #f5576c; }
-.md-typeset .grid.cards > ul > li:nth-child(4n+4) { border-left-color: #e056fd; }
+.md-sidebar {
+  top: 3.8rem;  /* compensa el header más alto para que el menú no quede tapado al hacer scroll */
+}
+
+.md-header__topic:first-child {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #39ff88;
+}
