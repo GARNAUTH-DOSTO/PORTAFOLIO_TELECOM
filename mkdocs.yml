@@ -33,7 +33,7 @@ nav:
   - Docker:
     - Introducción: docker/index.md
   - Automatizacion:
-    - Lab 1:
+    - Lab 1: ansible/index.md
 
 markdown_extensions:
   - admonition
