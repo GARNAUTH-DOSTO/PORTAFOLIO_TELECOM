@@ -3,10 +3,7 @@ hide:
   - navigation
 ---
 # 🌐 Portafolio de Telecomunicaciones
----
-hide:
-  - navigation
----
+
 <div class="hero" markdown="1">
 
 <p class="hero__hi">👋 ¡Hola! Soy</p>
