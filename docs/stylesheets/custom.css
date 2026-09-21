@@ -277,6 +277,7 @@
 .md-tabs__list {
   width: 50vw;
   max-width: 100%;
+  padding-left: 1.4rem;
 }
 
 .md-tabs__item {
