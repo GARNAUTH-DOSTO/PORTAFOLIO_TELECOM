@@ -1,13 +1,18 @@
 # 🌐 Portafolio de Telecomunicaciones
+---
+hide:
+  - navigation
+---
+<div class="hero" markdown="1">
 
-<div class="hero" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin-bottom: 2rem;">
+<p class="hero__hi">👋 ¡Hola! Soy</p>
+<p class="hero__name">Gustavo Torres Garnauth</p>
+<p class="hero__role">Ingeniero en Sistemas y Telecomunicaciones</p>
 
-## 👋 ¡Hola! Soy Gustavo Torres Garnauth
+Apasionado por las redes, la virtualización y la infraestructura TI. Aquí documento mis laboratorios prácticos y proyectos académicos.
 
-###Ingeniero en Sistemas yTelecomunicaciones
-
-Apasionado por las redes, la virtualización y la infraestructura TI.
-Aquí documento mis laboratorios prácticos y proyectos académicos.
+[:material-flask: Ver laboratorios](#laboratorios-destacados){ .md-button .md-button--primary }
+[:material-email: Contacto](#contacto){ .md-button }
 
 </div>
 
